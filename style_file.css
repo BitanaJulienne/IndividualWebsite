@@ -10,6 +10,7 @@ h1 {
 	  font-style:italic;
 	  border:solid;
 	  border-color:black
+	  position: absolute;
 }
 img {
    height:132px;
