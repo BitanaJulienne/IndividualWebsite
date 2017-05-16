@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+		<title>Books</title>
 		<meta charset="utf-8">
-	<title> Albums </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
-		body {
+			body {
 			background-color: lavenderblush;
-			font-size: 20px;
-			text-align:left;
-			text-align:justify;
-			color:black;
-			line-height: 30px;
-	
-		}
+			}
+			.w3-container {
+				line-height: 30px;
+				font-size:20px;
+				text-align:center;
+				font-family: "arial", serif;
+				font-style: italic;
+			}
+			.title {
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<body>
+	<div class="w3-container">
+		<p class="title"> Top 10 Books </p>
+		Hello everyone! Would like to give a shoutout to readers and the bookworms out there!! Reading is life, isn’t it? <br> Anyway, as a person who loves to read novels, I wanted to share a list of my favorite books that I would really recommend. So friends, here is my Top 10 Recommended Books: 
+	</div>
 
-		.intro {
-			line-height: 30px;
-			font-size:20px;
-			text-align:center;
-			font-family: "arial", serif;
-			font-style: italic;
-		}
+	<div class="w3-content w3-display-container" style="max-width:800px">
+  		<img class="mySlides" src="meanttobe.jpg" style="width:50%">
+  		<img class="mySlides" src="larajean.jpg" style="width:50%">
+  		<img class="mySlides" src="ness.jpg" style="width:50%">
+		<img class="mySlides" src="btn.jpg" style="width:50%">
+		<img class="mySlides" src="sciluv.jpg" style="width:50%">
+		<img class="mySlides" src="every.jpg" style="width:50%">
+		<img class="mySlides" src="12.jpg" style="width:50%">
+		<img class="mySlides" src="huhu.jpg" style="width:50%">
+		<img class="mySlides" src="divergent.png" style="width:50%">
+		<img class="mySlides" src="fav.jpg" style="width:50%">
+	</div>
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+		<div class="w3-left w3-hover-text-khaki onclick="plusDivs(-1)">&#10094;</div>
+		<div class="w3-right w3-hover-text-khaki onclick="plusDivs(1)">&#10095;</div>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+	</div>
 
-		.bio {
-			text-indent: 50px;
-		}
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
-		img {
-			height: 251px;
-			width: 251px;
-			margin-left: 50px;
-		}
-	</style>
-</head>
-<body> 
-	<p class="intro"> As someone who is a music enthusiast, here are some albums that I would like to share. </p>
-		5. Somewhere Somehow by We The Kings
-			<br> <img src="wtk.jpg">
-			<br> <p class="bio"> Somewhere Somehow is the 4th album of the pop punk band We the Kings. They are mostly known for their hit singles "Check Yes Juliet," "Secret Valentine," and "Sad Song." The album was released on December 16. 2013. </p>
-		4. Doo-Wops & Hooligans by Bruno Mars
-			<br> <img src="bruno.jpg">
-			<br> <p class="bio"> Bruno Mars, a very known musician for quite a long time. Not only do the youth enjoy his music, but also parents. This debut studio album of his was released on October 4, 2010 and was able to grabe the nomination for Grammy Award for Album of the Year. Fun fact, the name "Hooligans" is given to Bruno's fans. </p>
-		3. Andrew McMahon in the Wilderness by Andrew McMahon
-			<br> <img src="mcmahon.jpg">
-			<br> <p class="bio"> This is Andrew's self-titled debut album. Andrew McMahon is a singer, songwriter, and pianist who has a music genre of indie pop. This album contains 16 tracks (Deluxe Edition), including the albums' lead single "Cecilia and the Satellite." McMahon wrote this for his daugter, Cecilia. </p>
-		2. Divide by Ed Sheeran
-			<br> <img src="ed.jpg">
-			<br> <p class="bio"> Honestly, I am not a fan of Ed Sheeran. But when he released an album after 3 years, I completely fell for the songs in it. They all have sweet and heartbreaking messages behind them, you can cry while listening to it the first time. My favorites from the album are "Happier" and "Perfect." </p>
-		1. Beauty and the Beast (2017) Soundtrack
-			<br> <img src="batb.jpg">
-			<br> <p class="bio"> And here it is! My #1 album. This Disney movie we all know about since our childhood is truly one of our favorite fairytales, and for that we are thankful that they released a modernized version. The songs in the movie are indeed a beauty, especially Dan Stevens' "Evermore", who played the role of the beast. Celine Dion was also featured as she sang "How Does A Moment Last Forever." A remake of the song "Beauty and the Beast" was also made by John Legend and Ariana Grande. </p>
-	<a href="index.html"> <p class="intro"> Back to homepage </p> </a>
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-black", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-gray";
+}
+</script>
+
 </body>
-</html>
+</html> 
